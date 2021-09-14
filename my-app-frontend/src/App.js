@@ -9,21 +9,29 @@ import NavBar from './NavBar';
 
 function App() {
 
-  const [makeup, setMakeUp] = useState([])
-  console.log ("State of Our MakeUp [", makeup, "]")
+  function App() {
 
-  // const [essentialMakeup, setEsssentialMakeUp] = useState([])
-  // console.log ("State of Our Essential MakeUp [", essentialMakeup, "]")
-
-  useEffect(() => {
-  fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline") 
-    .then(response => response.json())
-    .then(makeup => { console.log("From Fetch", makeup)
-
-    setMakeUp(makeup)
-   
-   });
-  }, [])
+    const [users, setUsers] = useState([])
+    console.log ("State of Our MakeUp [", myMakeup, "]")
+  
+    // const [essentialMakeup, setEsssentialMakeUp] = useState([])
+    // console.log ("State of Our Essential MakeUp [", essentialMakeup, "]")
+  
+    useEffect(() => {
+    fetch("") 
+      .then(response => response.json())
+      .then(fetchedUsers => { console.log("From Fetch", fetchedUsers)
+  
+      setUsers(fetchedUsers)
+     
+     });
+    }, []);
+      
+    return (<>
+     
+          
+          </>)
+  }
     
   return (
     <div className="App">

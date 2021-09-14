@@ -1,5 +1,17 @@
-import React from 'react';
+import React from "react";
 
-function MakeUpEsssentials(){}
 
-export default MakeUpEsssentials;
+function makeUpEssentials () { <>
+
+
+
+
+</>
+
+    return (<>
+
+ </>   )
+}
+
+
+export default makeUpEssentials;
