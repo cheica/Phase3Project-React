@@ -6,7 +6,7 @@ import Home from './Home';
 // import SuperGlam from './SuperGlam';
 import NavBar from './NavBar';
 import Artists from './Artists';
-
+import SignUp from './SignUp';
 
 function App() {
 
@@ -77,8 +77,10 @@ function App() {
            />
          
         </Route>
+        <Route path="/">
+          <SignUp />
 
-        {/* <SuperGlam/>  */}
+        </Route>
       
       </Switch>
       
